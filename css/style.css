@@ -1,0 +1,85 @@
+*{
+    text-decoration: none;
+    line-height : 1.8em;
+}
+body {
+    background-color: #edefee;
+    font-family: 'Markazi Text', serif;
+    margin: 3rem 5% 3rem 5%;
+}
+
+header > img {
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    background-color: #333;
+    border-radius: 20px;
+}
+
+nav li{
+    display: inline-block;
+    padding : 10px;
+}
+nav li a{
+    color : white;
+    font-size: 30px;
+}
+
+section{
+    display: flex;
+    margin : 10px 0;  
+}
+
+article{
+    flex : 1;
+    padding : 30px;
+    border-radius: 30px;
+}
+
+section:nth-child(1) > article{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/pexels-reneterp-2977515.jpg);
+    background-size: cover;
+    width : 100%;
+    height : 30vh; 
+    background-color: rgba(0 , 0 , 0 , 0.5);
+}
+
+section:nth-child(1) h1{
+    color : white;
+}
+
+section:nth-child(1) p{
+    color : white;
+}
+
+article img{
+    width : 100%;
+    height : 30%;
+    object-fit: cover; 
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+footer div{
+    flex : 1;
+}
+
+footer div > p{
+    text-align: right;
+}
+
+footer div > p::before{
+    content: '';
+    position: absolute;
+    right : 5%;
+    height: 1px;
+    width: 30%;
+    background-color: #333;
+}
